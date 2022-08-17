@@ -5,11 +5,11 @@
 # Step 1:
 # This is your Docker ID/path
 # dockerpath=<>
-dockerpath=sambonuruddeen/udacityproject
+dockerpath=sambonuruddeen/udacityproject:latest
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run udacityproject --image=$dockerpath
+kubectl run udacityproject --image=$dockerpath --port=80
 
 
 # Step 3:
